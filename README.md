@@ -17,10 +17,11 @@ Sandeep Senthilkumar
     - ## Module 7 Reflection & Self-Assessment
    
     - ### Question 1: Bug Identification
-    - I located the first bug – `total = sale` – from the print statement. I printed the result of what total was after the loop (or after being incremented inside it) and I received 90, not 715, which told me something wasn't right. Then I spent some time looking at the code and found that I was replacing total, instead of appending to it. I could see at once that something was wrong when I was trying to use the program as it didn't contain a colon and gave me an error on start up.
-   
+    - The first error I found was in the line total = sale. When I printed the value of total after the loop (or increment in loop) had been completed, the value was 90 rather than 715. I looked through my code carefully and realised that rather than adding to the variable, total was being reassigned. Additionally, when I attempted to run the program I could immediately see there was an issue. There was no colon in the code and so I got an error as soon as the program started.
     - ### Question 2: Discount Function Understanding
-    - When applying a discount, the input is an object called price (a number such as 200), and another called tier (a string such as "gold", "silver", "bronze" or "none"). The function prints the discounted price. If tier is "gold" it returns 85% of the price. It will return 90% if it is "silver". If it is "bronze", it will return 95%. It will return the full price if it's something else. One of my colleagues might be able to use it without bothering to read the code, only be told they should be using those tier names and it will return a price discounted by that tier.
+    - Takes a price (number) and tier (string) as inputs, and outputs discounted prices. If the tier is gold, the output will be 0.85price. If it is silver, it will be 0.9price. If it is bronze, it will be 0.95price. Otherwise, it will just be the original price. My colleague may be able to use this function by just knowing what to write into ‘tier’ without understanding the code. They just need to know that it should be one of these words, and it will give them a discounted price depending on which one they choose.
+
+
    
     - ### Question 3: Debugging Tools & Methodology
-    - Claude AI was used in Explainer mode to learn what the IndexError traceback indicates. I was not calling for any code changes. Print statements and rubber ducking were used to find the bugs.
+    - In explainer mode, I used Claude AI to understand what the index error trace back meant. As no code adjustments were being made, print statements and rubber ducking were used to identify the errors.
